@@ -1,0 +1,3 @@
+[submodule "themes/AltitudeDark"]
+	path = themes/AltitudeDark
+	url = https://github.com/1090MHz/AltitudeDark.git
