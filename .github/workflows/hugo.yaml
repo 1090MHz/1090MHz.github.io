@@ -1,4 +1,4 @@
-# Sample workflow for building and deploying a Hugo site to GitHub Pages
+# Workflow for building and deploying a Hugo site to GitHub Pages
 name: Deploy Hugo site to Pages
 
 on:
@@ -54,7 +54,13 @@ jobs:
           enablement: true
           token: ${{ secrets.GITHUB_TOKEN }}  # Explicitly passing the token
       - name: Install Node.js dependencies
-        run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
+        working-directory: themes/AltitudeDark
+        run: |
+          npm ci
+      - name: Build Tailwind CSS
+        working-directory: themes/AltitudeDark
+        run: |
+          npm run build
       - name: Cache Restore
         id: cache-restore
         uses: actions/cache/restore@v4
