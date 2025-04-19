@@ -23,7 +23,7 @@ This site highlights some of the projects created by 1090MHz and shared with the
 
 {{< card 
   title="AltitudeDark" 
-  url="https://github.com/1090MHz/XPlaneImGuiPluginTemplate" 
+  url="https://github.com/1090MHz/AltitudeDark" 
   description="AltitudeDark is a Hugo theme inspired by the appearance of the X-Plane simulator menu. This theme focuses on simplicity and functionality and is still in development." 
 >}}
 
