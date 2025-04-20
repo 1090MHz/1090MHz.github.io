@@ -14,18 +14,21 @@ This site highlights some of the projects created by 1090MHz and shared with the
   url="https://github.com/1090MHz/XPlaneImGuiPluginTemplate" 
   description="A lightweight X-Plane plugin that integrates ImGui for enhanced in-sim user interfaces." 
 >}}
+{{< /card >}}
 
 {{< card 
   title="NeoSlider4XPlane" 
   url="https://github.com/1090MHz/NeoSlider4XPlane" 
   description="NeoSlider4XPlane transforms your flight simulation experience by integrating the Adafruit NeoSlider into X-Plane." 
 >}}
+{{< /card >}}
 
 {{< card 
   title="AltitudeDark" 
   url="https://github.com/1090MHz/AltitudeDark" 
   description="AltitudeDark is a Hugo theme inspired by the appearance of the X-Plane simulator menu. This theme focuses on simplicity and functionality and is still in development." 
 >}}
+{{< /card >}}
 
 Feel free to explore the repositories, contribute, or reach out if you have any questions or ideas!
 
