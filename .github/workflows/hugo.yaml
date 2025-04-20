@@ -83,9 +83,11 @@ jobs:
             --baseURL "${{ steps.pages.outputs.base_url }}/" \
             --cacheDir "${{ runner.temp }}/hugo_cache"
 
-      - name: Create .nojekyll file
-        run: echo "" > ./public/.nojekyll
-
+      - name: Ensure public folder and .nojekyll
+        run: |
+          mkdir -p ./public
+          touch ./public/.nojekyll
+      
       - name: Cache Save
         id: cache-save
         uses: actions/cache/save@v4
