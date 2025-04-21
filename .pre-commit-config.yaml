@@ -56,4 +56,4 @@ repos:
           - remark-shortcodes
           - '{"startBlock":"{{<","endBlock":">}}"}'
           - --use
-          - remark-lint-maximum-line-length=false
+          - '["remark-lint-maximum-line-length", false]'
