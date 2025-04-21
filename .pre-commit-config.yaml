@@ -47,4 +47,12 @@ repos:
         entry: npx remark
         language: node
         types: [markdown]
-        args: ["--quiet", "--frail"]
+        args:
+          - --quiet
+          - --frail
+          - --use
+          - remark-preset-lint-recommended
+          - --use
+          - remark-shortcodes={"startBlock":"{{<","endBlock":">}}"}
+          - --use
+          - remark-lint-maximum-line-length=false
