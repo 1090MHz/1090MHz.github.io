@@ -29,7 +29,7 @@ repos:
     rev: v2.3.0
     hooks:
       - id: prettier
-        files: \.(css|html|js|json)(?!\.md)$  # Exclude Markdown files (.md)
+        files: \.(css|html|js|json)(?!\.md)$ # Exclude Markdown files (.md)
 
   # CSSLint for linting CSS files
   - repo: https://github.com/pre-commit/mirrors-csslint
@@ -53,6 +53,7 @@ repos:
           - --use
           - remark-preset-lint-recommended
           - --use
-          - remark-shortcodes={"startBlock":"{{<","endBlock":">}}"}
+          - remark-shortcodes
+          - '{"startBlock":"{{<","endBlock":">}}"}'
           - --use
           - remark-lint-maximum-line-length=false
