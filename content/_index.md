@@ -5,7 +5,9 @@ title: "1090MHz GitHub Projects Overview"
 description: "Explore a selection of projects created by 1090MHz and shared with the open-source community."
 ---
 
-This site highlights some of the projects created by 1090MHz and shared with the open-source community. Below are a few featured projects. For a complete list, visit the [GitHub profile](https://github.com/1090MHz).
+## Welcome to 1090MHz's GitHub Projects
+
+1090MHz is dedicated to creating innovative solutions for flight simulation and beyond. Below are some featured projects. For a complete list, visit the [GitHub profile](https://github.com/1090MHz).
 
 ## Featured Projects
 
@@ -36,5 +38,3 @@ description="AltitudeDark is a Hugo theme inspired by the appearance of the X-Pl
 Feel free to explore the repositories, contribute, or reach out if you have any questions or ideas!
 
 ---
-
-Explore the [GitHub profile](https://github.com/1090MHz) for a complete list of projects.
