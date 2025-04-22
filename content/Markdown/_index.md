@@ -3,10 +3,8 @@ title: "Markdown"
 date: 2019-03-11
 description: "Sample article showcasing basic Markdown syntax and formatting for HTML elements."
 tags: ["markdown", "css", "html", "sample"]
-type: 'sample'
-layout: "single"
+type: "sample"
 ---
-
 
 This article offers a sample of basic Markdown formatting that can be used in Blowfish, also it shows how some basic HTML elements are decorated.
 
@@ -109,17 +107,6 @@ Tables aren't part of the core Markdown spec, but Hugo supports supports them ou
   <p>Test</p>
 </body>
 </html>
-{{< /highlight >}}
-
-{{< highlight vs "linenos=table,hl_lines=3" >}}
-package main
-
-import "fmt"
-
-func main() {
-    // hi
-    fmt.Println("Hello, World!")
-}
 {{< /highlight >}}
 
 ## List Types
