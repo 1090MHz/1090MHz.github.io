@@ -3,7 +3,7 @@
 repos:
   # Pre-commit hooks for general file checks
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.1.0
+    rev: v5.0.0
     hooks:
       - id: check-json
       - id: check-merge-conflict
@@ -22,14 +22,13 @@ repos:
       - id: trailing-whitespace
         args: [--markdown-linebreak-ext=md]
 
-  # Prettier for formatting CSS, HTML, JS, JSON (exclude Markdown)
-  # Markdown files are excluded because Prettier does not handle Hugo shortcodes well.
-  # Markdown files are handled by Remark instead.
+  # Prettier for formatting CSS, HTML, JS, JSON, and Markdown
   - repo: https://github.com/pre-commit/mirrors-prettier
-    rev: v2.3.0
+    rev: v3.1.0
     hooks:
       - id: prettier
-        files: \.(css|html|js|json)(?!\.md)$ # Exclude Markdown files (.md)
+        additional_dependencies: ["prettier", "prettier-plugin-go-template"]
+        files: \.(css|html|js|json|md)$
 
   # CSSLint for linting CSS files
   - repo: https://github.com/pre-commit/mirrors-csslint
@@ -37,23 +36,3 @@ repos:
     hooks:
       - id: csslint
         files: ^(?!.*tailwind\.css$).*\.css$
-
-  # Remark for Markdown linting
-  # Remark is used for Markdown files because it supports Hugo shortcodes.
-  - repo: local
-    hooks:
-      - id: remark
-        name: Remark Markdown Linter
-        entry: npx remark
-        language: node
-        types: [markdown]
-        args:
-          - --quiet
-          - --frail
-          - --use
-          - remark-preset-lint-recommended
-          - --use
-          - remark-shortcodes
-          - '{"startBlock":"{{<","endBlock":">}}"}'
-          - --use
-          - '["remark-lint-maximum-line-length", false]'
