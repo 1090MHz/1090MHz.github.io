@@ -20,6 +20,12 @@
       "options": {
         "parser": "markdown"
       }
+    },
+    {
+      "files": ["*.json"],
+      "options": {
+        "tabWidth": 4
+      }
     }
   ]
 }
